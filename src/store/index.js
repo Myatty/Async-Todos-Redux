@@ -1,0 +1,9 @@
+/* eslint-disable no-unused-vars */
+import {configureStore} from "@reduxjs/toolkit";
+import todoReducer from "./reducer/todo";
+
+const store = configureStore({
+    reducer: {todo: todoReducer}
+})
+
+export default store;
